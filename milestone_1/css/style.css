@@ -13,11 +13,31 @@ img {
 
 /* ------------------------------------------ */
 
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* Header */
+header {
+    padding: 15px 20px;
+    /* border: 2px solid blue; */
+    background-color: #2e3a46;
+}
+
+.logo {
+    width: 48px;
+    filter: drop-shadow(0 0 5px black);
+}
+
 
 /* Main */
 main {
     background-color: #1e2d3b;
-    height: 100vh;
+    flex-grow: 1;
     overflow-y: auto;
     display: flex;
     align-items: center;
