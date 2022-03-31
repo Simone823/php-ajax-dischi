@@ -32,7 +32,7 @@
         <!-- Main -->
         <main>
             <!-- Wrapper albums -->
-            <div class="wrapper_albums">
+            <div class="wrapper_albums" v-if="arrayAlbums.length">
 
                 <!-- Album -->
                 <div class="album" v-for="(element, index) in arrayAlbums" :key="index">
