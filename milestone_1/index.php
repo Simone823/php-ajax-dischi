@@ -1,4 +1,6 @@
 <?php
+
+    // Include file db.php
     include '../milestone_1/db.php';
 
 ?>
@@ -16,6 +18,14 @@
     <title>Milestone 1</title>
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./img/spotify.svg" alt="">
+        </div>
+    </header>
     
 
     <!-- Main -->
