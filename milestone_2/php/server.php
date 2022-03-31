@@ -83,10 +83,34 @@
         ]
     ];
 
-    // Funzione header
-    header('Content-Type: application/json');
+    // Array filtrato
+    $albums_filter = [];
 
-    // Echo $albums json file
-    echo json_encode($albums);
+    // Funzione header
+    header('content-type: application/json');
+
+    if(isset($_GET['genere'])) {
+
+        // Parametro genere
+        $genere = $_GET['genere'];
+
+        // Ciclo foreach array albums
+        foreach ($albums as $element) {
+            // var_dump($element['genre']);
+
+            if ($element['genre'] == $genere) {
+
+                // Pusho element nell'array albums_filter
+                array_push($albums_filter, $element);
+            }
+        }
+
+        // Echo $albums_filter json file
+        echo json_encode($albums_filter);
+
+    } else {
+        // Echo $albums json file
+        echo json_encode($albums);
+    }
 
 ?>
