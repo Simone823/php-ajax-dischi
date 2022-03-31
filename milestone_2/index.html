@@ -17,6 +17,42 @@
     <title>Php Ajax Dischi</title>
 </head>
 <body>
+
+    <!-- App Vue -->
+    <div id="app">
+
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/spotify.svg" alt="">
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Wrapper albums -->
+            <div class="wrapper_albums">
+
+                <!-- Album -->
+                <div class="album" v-for="(element, index) in arrayAlbums" :key="index">
+                    <!-- Wrapper Immagine -->
+                    <div class="img_wrapper">
+                        <img :src="element.poster" alt="">
+                    </div>
+
+                    <!-- Wrapper description -->
+                    <div class="description_wrapper">
+                        <h1 class="title">{{element.title}}</h1>
+                        <h3 class="author">{{element.author}}</h3>
+                        <h3 class="year">{{element.year}}</h3>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
     
 
     <!-- Link JavaScript -->
