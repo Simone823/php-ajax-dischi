@@ -67,7 +67,6 @@ main {
     margin: 0 auto;
     padding: 10px 20px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
 }
