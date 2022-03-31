@@ -13,8 +13,8 @@ img {
 
 /* ------------------------------------------ */
 
-/* body */
-body {
+/* App */
+#app {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -74,6 +74,10 @@ main {
     margin: 0 auto;
     margin-bottom: 15px;
     box-shadow: 0 0 10px black;
+}
+
+.img_wrapper img {
+    aspect-ratio: 1/1;
 }
 
 .description_wrapper {

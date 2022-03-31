@@ -76,6 +76,10 @@ main {
     box-shadow: 0 0 10px black;
 }
 
+.img_wrapper img {
+    aspect-ratio: 1/1;
+}
+
 .description_wrapper {
     text-align: center;
     width: 80%;
