@@ -27,6 +27,18 @@
             <div class="logo">
                 <img src="./img/spotify.svg" alt="">
             </div>
+
+            <!-- Select -->
+            <div class="select">
+                <select name="genere" id="genere" v-model="optionSelect" @change="getOptionSelect()">
+                    <option value="" disabled selected hidden>Seleziona un genere</option>
+                    <option value="Default">Default</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                </select>
+            </div>
         </header>
 
         <!-- Main -->
